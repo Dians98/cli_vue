@@ -1,15 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <img src="./assets/logo.png" alt="">
+    <mon-premier-composant></mon-premier-composant>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import monPremierComposant from './components/mon-premier-composant.vue';
 
 export default {
   name: 'App',
+  /*  
+    propriété qui permet d'enregistrer les composants locallement
+  */
   components: {
-    HelloWorld
+    /**
+     * 'nom d'utilisation dans ce fichier' : reference (par rapport à l'import)
+     */
+    'mon-premier-composant' : monPremierComposant
   }
 }
 </script>

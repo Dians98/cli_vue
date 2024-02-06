@@ -1,0 +1,42 @@
+- node_modules :
+    Les dépendances du projet
+
+- public :
+    SPA : Single Page Application, i-e que toute l'application se tient dans la div#app dans index.html
+    Contient la favIcon 
+
+- main.js :
+    Dans ce fichier on render et create notre element à partir de App(App.vue )
+
+- App.vue : 
+    C'est le composant root(i-e on a tous notre composant là-dedans, et App c'est le plus haut dans l'arbre)
+
+- Au niveau du composant : 
+    Le code est divisé en trois partie 
+        - Le template : c'est l'élément à afficher
+        - le script : c'est la logique (i-e les methods, les data, etc...)
+        - le style : c'est la partie css
+
+- Assets :
+    c'est les ressources, les images etc 
+
+
+
+TIPS 
+    De base le code va s'afficher tout en blanc dans tes fichiers.vue, notamment sur VS CODE.
+
+    Il existe l'extension "Vetur" qui permet de rajouter des couleurs automatiquement, ce qui rend ton code bien plus agréable.
+
+    Tu as juste à taper "Vetur" dans les extensions et l'installer.
+
+
+
+    Pour faire fonctionner emmet et ses raccourcis claviers, allez dans votre settings.json(Aller dans le settings de l'extension dans vscode -> edit in settings json) et écrivez ceci, enregistrez et c'est prêt !
+
+    "emmet.includeLanguages": {
+
+    "vue-html": "html",
+
+    "vue": "html"
+
+    },
