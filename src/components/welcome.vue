@@ -1,8 +1,10 @@
-
 <template>
     <div>
         <h4>{{ txt }}</h4>
-        <List></List>
+        <!--
+            On passe le props au component enfant en utilisant v-bind:nomDuPropsEnfant="dataParentAPasser"
+        -->
+        <List v-bind:fruitCategory="category"></List>
     </div>
 </template>
 
@@ -16,7 +18,8 @@ import List from './List/List.vue'
         data()
         {
             return { 
-                txt: "Bienvenue sur cette page en Vue.js"
+                txt: "Bienvenue sur cette page en Vue.js",
+                category:['cat1', 'cat2', 'cat 3']
             }
         },
         components:
