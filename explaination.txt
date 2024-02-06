@@ -40,3 +40,8 @@ TIPS
     "vue": "html"
 
     },
+
+
+
+    Pour eviter d'utiliser un composant multi-words, ajouter ceci dans vue.config.js 
+        lintOnSave: true

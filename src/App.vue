@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <img src="./assets/logo.png" alt="">
-    <mon-premier-composant></mon-premier-composant>
+    <welcome></welcome>
   </div>
 </template>
 
 <script>
-import monPremierComposant from './components/mon-premier-composant.vue';
+import welcome from './components/welcome.vue';
 
 export default {
   name: 'App',
@@ -17,7 +17,7 @@ export default {
     /**
      * 'nom d'utilisation dans ce fichier' : reference (par rapport à l'import)
      */
-    'mon-premier-composant' : monPremierComposant
+    'welcome' : welcome
   }
 }
 </script>
